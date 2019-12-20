@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.Page1">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="+"
+                        Activated="ToolbarItems_Activated"/>
+        
+    </ContentPage.ToolbarItems>
+
+    <ListView x:Name="loginInformationView">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding Name}"
+                           Detail="{Binding Username}"/>
+            </DataTemplate>
+       </ListView.ItemTemplate>
+        
+        
+   </ListView>
+
+
+</ContentPage>
